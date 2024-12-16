@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #dfe2fe;
+    overflow: hidden;
+}
+
+nav {
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    animation-duration: 6s;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+nav .name-li {
+    margin-right: auto;
+}
+
+nav a {
+    display: flex;
+    padding: 5px 50px;
+}
+
+.Me {
+    font-family: Sen, sans-serif;
+    position: relative;
+    top: 25px;
+    left: 15%;
+    font-size: 32px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.name {
+    font-family: Sen, sans-serif;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 2px solid #c6c8ff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.name::before,
+.name::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #c6c8ff;
+}
+
+.name::before {
+    top: -10px; 
+    left: -10px;
+}
+
+.name::after {
+    bottom: -10px;
+    right: -10px;
+}
+
+.whatdoido {
+    font-family: Sen, sans-serif;
+    position: relative;
+    top: -30px;
+    left: 15%;
+    font-size: 32px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.profession {
+    color: green;
+}
+
+.wave {
+    background: linear-gradient(to bottom, rgba(168, 140, 226, 0.2), transparent);
+    border-radius: 50% 50% 0 0;
+    height: 150px;
+    width: 100%;
+}
+
+.circle {
+    width: 350px;
+    height: 350px;
+    background-color: lightblue;
+    border-radius: 50%;
+    position: relative;
+    bottom: 200px;
+    left: 500px;
+    border-radius: 1px solid black;
+}
+
+.memoji {
+    position: relative;
+    bottom: 610px;
+    left: 440px; 
+}
+
+.description {
+    position: relative;
+    bottom: 850px;
+    left: 140px; 
+    font-size: 32px;
+    font-family: Sen, sans-serif;
+}
+
+.down-arrow-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.down-arrow-button:hover {
+    background-color: #0056b3;
+}
+
+.down-arrow-button:focus {
+    outline: none;
+}
+
+.up-arrow-button {
+    position: fixed;
+    bottom: 875px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.up-arrow-button:hover {
+    background-color: #0056b3;
+}
+
+.up-arrow-button:focus {
+    outline: none;
+}
+
+#up-arrow {
+    display: none;
+}
+
+body {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+
+@media screen and (min-width: 1700px) {
+    .circle {
+        width: 450px;
+        height: 450px;
+        background-color: lightblue;
+        border-radius: 50%;
+        position: relative;
+        bottom: 300px;
+        left: 1100px;
+        border-radius: 1px solid black;
+    }
+
+    .memoji {
+        position: relative;
+        bottom: 750px;
+        left: 1080px;
+    }
+
+    .whatdoido {
+        font-family: Sen, sans-serif;
+        position: relative;
+        top: -30px;
+        left: 20%;
+        font-size: 48px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .Me {
+        font-family: Sen, sans-serif;
+        position: relative;
+        top: 25px;
+        left: 20%;
+        font-size: 48px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .description {
+        position: relative;
+        bottom: 1000px;
+        left: 20%; 
+        font-size: 32px;
+        font-family: Sen, sans-serif;
+    }
+}
+
